@@ -25,7 +25,8 @@ module.exports = defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false,
+    headless: true,
+    // Login de rede
     httpCredentials: {
       username: process.env.USER,
       password: process.env.PASSWORD,
@@ -48,11 +49,6 @@ module.exports = defineConfig({
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
-
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
 
     /* Test against mobile viewports. */
     // {
