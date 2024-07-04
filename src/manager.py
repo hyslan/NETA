@@ -1,7 +1,6 @@
 import glob
 import os
 import shutil
-from typing import Union
 from datetime import date, timedelta
 
 
@@ -45,16 +44,12 @@ def delete_files() -> None:
 
 
 def rename_file() -> str:
-    try:
-        today: date = date.today()
-        seven_days: date = today - timedelta(days=7)
-        today: Union[date, str] = today.strftime("%d_%m_%Y")
-        seven_days: Union[date, str] = seven_days.strftime("%d_%m_%Y")
-        delta = "N1N@_" + seven_days + "_" + today
-        old = os.path.join(os.getcwd(), "data", "ESTRATTORE_PROCESSI.CSV")
-        new_file = os.path.join(os.getcwd(), "data", f"{delta}.CSV")
-        os.rename(old, new_file)
-        return new_file
-    except Exception as e:
-        print(e)
-        print("Erro ao renomear arquivo")
+    today: date = date.today()
+    seven_days: date = today - timedelta(days=7)
+    today_str: str = today.strftime("%d_%m_%Y")
+    seven_days_str: str = seven_days.strftime("%d_%m_%Y")
+    delta = "N1N@_" + seven_days_str + "_" + today_str
+    old = os.path.join(os.getcwd(), "data", "ESTRATTORE_PROCESSI.CSV")
+    new_file = os.path.join(os.getcwd(), "data", f"{delta}.CSV")
+    os.rename(old, new_file)
+    return new_file
