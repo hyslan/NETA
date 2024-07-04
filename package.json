@@ -12,6 +12,7 @@
     "@types/node": "^20.14.9"
   },
   "dependencies": {
+    "decompress": "^4.2.1",
     "dotenv": "^16.4.5"
   }
 }
