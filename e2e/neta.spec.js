@@ -20,6 +20,7 @@ function extractZip(zipFile, outputDir) {
 }
 
 test('neta_downloads', async ({ page }) => {
+  console.log('N1N@: Iniciando download...');
   let data = new Date();
   data.setDate(data.getDate() - 7);
 
@@ -75,6 +76,7 @@ test('neta_downloads', async ({ page }) => {
 
 test('neta_processos', async ({ page }) => {
   test.setTimeout(60000);
+  console.log('N1N@: Iniciando processo...');
   await page.goto(process.env.URL);
   await page.getByText('CRM').click();
   await page.getByText('MONITOR DE PROCESSOS').click();

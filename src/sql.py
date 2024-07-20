@@ -28,8 +28,8 @@ def connect_sql(df: pd.DataFrame) -> None:
     # Insert
     chunk_size = 1000
     tqdm_iter = tqdm(range(0, len(df), chunk_size), desc="Inserido no banco de dados ML", unit="chunk")
-    sql_table = "tb_Fato_Bos_Prov"
-    proc = "EXEC [LESTE_AD\\CargaDeDados].[sp_Carga_Bos]"
+    sql_table = "tb_Fato_Neta_Prov"
+    proc = "EXEC [BD_ML].[LESTE_AD\\CargaDeDados].[sp_Carga_Neta]"
     # Escreve o DataFrame em pedaços na tabela SQL
     for start in tqdm_iter:
         end = start + chunk_size
