@@ -6,8 +6,7 @@ import src.sql as sql
 def main():
     file = manager.rename_file()
     df = sql.get_csv(file)
-    # Waiting the sql_table and sp
-    # sql.connect_sql(df)
+    sql.connect_sql(df)
     manager.manager()
     manager.delete_files()
 
