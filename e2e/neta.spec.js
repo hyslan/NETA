@@ -22,10 +22,12 @@ function extractZip(zipFile, outputDir) {
 test('neta_downloads', async ({ page }) => {
   console.log('N1N@: Iniciando download...');
   let data = new Date();
-  data.setDate(data.getDate() - 7);
+  // Get the date of the last week minus one
+  data.setDate(data.getDate() - 8);
 
   let data_ini = `${String(data.getDate()).padStart(2, '0')}/${
     String(data.getMonth() + 1).padStart(2, '0')}/${data.getFullYear()}`;
+  // Yesterday's date
   data.setDate(data.getDate() + 7);
 
   let data_fim = `${String(data.getDate()).padStart(2, '0')}/${
