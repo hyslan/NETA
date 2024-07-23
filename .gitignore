@@ -8,7 +8,5 @@ node_modules/
 .env
 /data
 /zip
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+*.pyc
+__pycache__/
