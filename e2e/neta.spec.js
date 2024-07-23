@@ -58,6 +58,7 @@ test('neta_downloads', async ({ page }) => {
     await extractZip(`./zip/${nome_arquivo}.ZIP`, `./data`);
     await sleep(2000);
     // Exec Python
+    console.log("WD: " + process.cwd())
     let scriptPath = path.join(process.cwd(), 'main.py');
     let shell = new PythonShell(
       scriptPath, {
@@ -65,8 +66,8 @@ test('neta_downloads', async ({ page }) => {
     }
     );
     shell.on('message', function (message) {
-      window.console.log('message', message);
-      window.console.log(new Date());
+      console.log('message', message);
+      console.log(new Date());
     });
 
     // Trata os erros
@@ -78,6 +79,7 @@ test('neta_downloads', async ({ page }) => {
     shell.on('close', function () {
       console.log('Python script finished.');
     });
+
 
   }
   catch (error) {
@@ -151,3 +153,4 @@ test('neta_processos', async ({ page }) => {
   await page.frameLocator('#NETAModalDialogiFrame_2').getByRole('button', { name: 'OK' }).click();
   console.log('N1N@: Processo concluído...')
 });
+
