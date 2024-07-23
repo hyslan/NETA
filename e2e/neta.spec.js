@@ -2,7 +2,6 @@
 require('dotenv').config()
 const { test, expect } = require('@playwright/test');
 const decompress = require("decompress");
-const { exec } = require('child_process');
 const { PythonShell } = require('python-shell');
 const path = require('path');
 
