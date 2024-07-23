@@ -1,0 +1,68 @@
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.exe
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.deps.json
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.runtimeconfig.json
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.pdb
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\System.Data.SqlClient.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.AssemblyReference.cache
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.AssemblyInfoInputs.cache
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.AssemblyInfo.cs
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.CoreCompileInputs.cache
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.sourcelink.json
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.Up2Date
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\refint\InsertSql.dll
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.pdb
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.genruntimeconfig.cache
+C:\Users\irgpapais\Documents\Meus Projetos\BOS\InsertSql\InsertSql\obj\Release\net8.0\ref\InsertSql.dll
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.exe
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.deps.json
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.runtimeconfig.json
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.dll
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.pdb
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\System.Data.SqlClient.dll
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-arm64\native\sni.dll
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-x64\native\sni.dll
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-x86\native\sni.dll
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\rpa\bos\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.AssemblyReference.cache
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.AssemblyInfoInputs.cache
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.AssemblyInfo.cs
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.CoreCompileInputs.cache
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.sourcelink.json
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.Up2Date
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.dll
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\refint\InsertSql.dll
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.pdb
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.genruntimeconfig.cache
+C:\rpa\bos\InsertSql\InsertSql\obj\Release\net8.0\ref\InsertSql.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.exe
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.deps.json
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.runtimeconfig.json
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\InsertSql.pdb
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\System.Data.SqlClient.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\bin\Release\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.AssemblyReference.cache
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.AssemblyInfoInputs.cache
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.AssemblyInfo.cs
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.CoreCompileInputs.cache
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.csproj.Up2Date
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\refint\InsertSql.dll
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.pdb
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\InsertSql.genruntimeconfig.cache
+C:\Users\irgpapais\Documents\Meus Projetos\Neta\InsertSql\InsertSql\obj\Release\net8.0\ref\InsertSql.dll
