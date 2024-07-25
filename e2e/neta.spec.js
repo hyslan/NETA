@@ -90,7 +90,7 @@ test('neta_downloads', async ({ page }) => {
 });
 
 test('neta_processos', async ({ page }) => {
-  test.setTimeout(60000);
+  test.setTimeout(80000);
   console.log('N1N@: Iniciando processo...');
   await page.goto(process.env.URL);
   await page.getByText('CRM').click();
@@ -143,6 +143,7 @@ test('neta_processos', async ({ page }) => {
   }
 
   // Confirmar
+  console.log("Agurdando confirmação da impressão.")
   await page.getByRole('button', { name: 'Impressão' }).click();
   await page.frameLocator('#NETAModalDialogiFrame_1').locator('#ctl00_NetSiuCPH_txt_rpt_desclancio').click();
   let nome_arquivo = `N1N@_${data_ini}_${data_fim}`;

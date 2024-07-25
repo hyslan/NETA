@@ -1,6 +1,6 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
-const {resolve} = require("node:path");
+const { resolve } = require("node:path");
 
 /**
  * Read environment variables from file.
@@ -25,7 +25,7 @@ module.exports = defineConfig({
   reporter: [['html', { open: 'never' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: true,
+    headless: false,
     // Login de rede
     httpCredentials: {
       username: process.env.USER,
