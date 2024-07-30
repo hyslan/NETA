@@ -3,24 +3,24 @@ const { spawn } = require('child_process');
 function callPython() {
   console.log("Calling Python");
 
-  // Use o caminho absoluto diretamente
-  let scriptPath = 'C:\\Users\\irgpapais\\Documents\\Meus Projetos\\Neta\\nina\\main.py';
-  console.log(`Script path: ${scriptPath}`); // Logging adicional
+  // absolute path
+  let scriptPath = 'C:\\rpa\\NETA\\main.py';
+  console.log(`Script path: ${scriptPath}`); // Logging
 
-  // Chamar o script Python como um novo processo
+  // Newborn Process
   const pythonProcess = spawn('python', [scriptPath]);
 
-  // Capturar a saída do script Python
+  // Out Python
   pythonProcess.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
   });
 
-  // Capturar erros do script Python
+  // Catch Python errors
   pythonProcess.stderr.on('data', (data) => {
     console.error(`stderr: ${data}`);
   });
 
-  // Confirmar a finalização do script Python
+  // Confirm script Python
   pythonProcess.on('close', (code) => {
     console.log(`Python script finished with code ${code}`);
   });
