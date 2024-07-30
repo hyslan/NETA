@@ -1,25 +1,29 @@
-const path = require('path');
-const { PythonShell } = require('python-shell');
+const { spawn } = require('child_process');
 
-console.log("Calling Python")
+function callPython() {
+  console.log("Calling Python");
 
-let scriptPath = path.join(process.cwd(), 'main.py');
-  let shell = new PythonShell(
-    scriptPath, {
-    pythonOptions: ['-u']
-  }
-  );
-  shell.on('message', function (message) {
-    console.log('message', message);
-    console.log(new Date());
+  // Use o caminho absoluto diretamente
+  let scriptPath = 'C:\\Users\\irgpapais\\Documents\\Meus Projetos\\Neta\\nina\\main.py';
+  console.log(`Script path: ${scriptPath}`); // Logging adicional
+
+  // Chamar o script Python como um novo processo
+  const pythonProcess = spawn('python', [scriptPath]);
+
+  // Capturar a saída do script Python
+  pythonProcess.stdout.on('data', (data) => {
+    console.log(`stdout: ${data}`);
   });
 
-  // Trata os erros
-  shell.on('error', function (error) {
-    console.error('Error:', error);
+  // Capturar erros do script Python
+  pythonProcess.stderr.on('data', (data) => {
+    console.error(`stderr: ${data}`);
   });
 
-  // Confirma a finalização do script Python
-  shell.on('close', function () {
-    console.log('Python script finished.');
+  // Confirmar a finalização do script Python
+  pythonProcess.on('close', (code) => {
+    console.log(`Python script finished with code ${code}`);
   });
+}
+
+module.exports = callPython;

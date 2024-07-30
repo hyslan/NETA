@@ -3,10 +3,19 @@ require('dotenv').config();
 const {chromium} = require('playwright');
 
 (async () => {
-    //
-    const browser = await chromium.launch();
-    test.setTimeout(60000);
+  // Setup
+  const browser = await chromium.launch({ headless: true ,
+  timeout: 90000});
+  const context = await browser.newContext({httpCredentials: {
+    username: process.env.USER,
+    password: process.env.PASSWORD,
+  }
+  });
+  const page = await context.newPage();
+
+  // Run
   console.log('N1N@: Iniciando processo...');
+  console.log('URL: ' + process.env.URL);
   await page.goto(process.env.URL);
   await page.getByText('CRM').click();
   await page.getByText('MONITOR DE PROCESSOS').click();
@@ -14,7 +23,8 @@ const {chromium} = require('playwright');
   await page.getByRole('link', { name: 'Dados processo' }).click();
   await page.getByRole('button', { name: 'Mostrar Pesquisa Estendida' }).click();
   await page.getByRole('button', { name: 'Configurar pesquisa' }).click();
-  await expect(page.getByRole('cell', { name: 'Elaboração em andamento' })).toBeVisible({ timeout: 60000 });
+  const span_elaboracao = page.getByRole('cell', { name: 'Elaboração em andamento' });
+    await span_elaboracao.waitFor({ state: 'visible' });
   console.log('Elaboração em andamento...')
 
   // Data criação início
@@ -67,4 +77,7 @@ const {chromium} = require('playwright');
   await page.frameLocator('#NETAModalDialogiFrame_2').getByRole('button', { name: 'CONFIRMAR' }).click();
   await page.frameLocator('#NETAModalDialogiFrame_2').getByRole('button', { name: 'OK' }).click();
   console.log('N1N@: Processo concluído...')
-})
+  // Teardown
+  await context.close();
+    await browser.close();
+})();

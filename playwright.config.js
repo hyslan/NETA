@@ -25,7 +25,7 @@ module.exports = defineConfig({
   reporter: [['html', { open: 'never' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false,
+    headless: true,
     // Login de rede
     httpCredentials: {
       username: process.env.USER,
