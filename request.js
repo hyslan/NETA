@@ -61,7 +61,7 @@ const {chromium} = require('playwright');
   console.log('Data criação fim editável...')
   try {
     await campo_data_fim.click();
-    await campo_data_fim.fill(data_fim, { timeout: 60000 });
+    await campo_data_fim.fill(data_fim, { timeout: 70000 });
     await campo_data_fim.press('Enter');
   }
   catch (error) {
@@ -69,14 +69,14 @@ const {chromium} = require('playwright');
   }
 
   // Confirmar
-  await page.getByRole('button', { name: 'Impressão' }).click();
-  await page.frameLocator('#NETAModalDialogiFrame_1').locator('#ctl00_NetSiuCPH_txt_rpt_desclancio').click();
+  await page.getByRole('button', { name: 'Impressão' }).click({timeout: 90000});
+  await page.frameLocator('#NETAModalDialogiFrame_1').locator('#ctl00_NetSiuCPH_txt_rpt_desclancio').click({timeout: 90000});
   let nome_arquivo = `N1N@_${data_ini}_${data_fim}`;
   await page.frameLocator('#NETAModalDialogiFrame_1').locator('#ctl00_NetSiuCPH_txt_rpt_desclancio').fill(nome_arquivo);
-  await page.frameLocator('#NETAModalDialogiFrame_1').getByRole('button', { name: 'Impressão' }).click();
-  await page.frameLocator('#NETAModalDialogiFrame_1').getByRole('button', { name: 'Sim' }).click();
-  await page.frameLocator('#NETAModalDialogiFrame_2').getByRole('button', { name: 'CONFIRMAR' }).click();
-  await page.frameLocator('#NETAModalDialogiFrame_2').getByRole('button', { name: 'OK' }).click();
+  await page.frameLocator('#NETAModalDialogiFrame_1').getByRole('button', { name: 'Impressão' }).click({timeout: 90000});
+  await page.frameLocator('#NETAModalDialogiFrame_1').getByRole('button', { name: 'Sim' }).click({timeout: 90000});
+  await page.frameLocator('#NETAModalDialogiFrame_2').getByRole('button', { name: 'CONFIRMAR' }).click({timeout: 90000});
+  await page.frameLocator('#NETAModalDialogiFrame_2').getByRole('button', { name: 'OK' }).click({timeout: 90000});
   console.log('N1N@: Processo concluído...')
   // Teardown
   await context.close();
