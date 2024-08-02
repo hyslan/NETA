@@ -12,6 +12,7 @@ const {chromium} = require('playwright');
   }
   });
   const page = await context.newPage();
+  page.setDefaultTimeout(180000);
 
   // Run
   console.log('N1N@: Iniciando processo...');

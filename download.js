@@ -25,10 +25,11 @@ function extractZip(zipFile, outputDir) {
         timeout: 180000});
     const context = await browser.newContext({httpCredentials: {
             username: process.env.USER,
-            password: process.env.PASSWORD,
+            password: process.env.PASSWORD
         }
     });
     const page = await context.newPage();
+    page.setDefaultTimeout(180000);
 
     console.log('N1N@: Iniciando download...');
     let data = new Date();
