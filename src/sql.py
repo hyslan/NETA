@@ -1,5 +1,6 @@
 import os
 import subprocess
+import csv
 import sqlalchemy as sa
 import pandas as pd
 import numpy as np
@@ -56,7 +57,7 @@ def connect_sql(df: pd.DataFrame) -> None:
 
 def get_csv(file):
     console.print(f"Reading file {file}")
-    df = pd.read_csv(file, encoding='latin-1', sep=';', dtype=str)
+    df = pd.read_csv(file, encoding='latin-1', sep=';', dtype=str, quoting=csv.QUOTE_NONE)
     df.replace(np.nan, '', inplace=True)
     selected_columns = df.columns[:49]
     selected_df = df[selected_columns]
