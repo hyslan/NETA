@@ -23,7 +23,7 @@ const {chromium} = require('playwright');
   await page.locator('#ctl00_NetSiuCPH_ddl_Ele_For_Rpt_Nome_Report').selectOption('mRI6FhR9fdAv92Nv');
   await page.getByRole('link', { name: 'Dados processo' }).click();
   await page.getByRole('button', { name: 'Mostrar Pesquisa Estendida' }).click();
-  await page.getByRole('button', { name: 'Configurar pesquisa' }).click();
+  await page.getByRole('button', { name: 'Configurar pesquisa' }).nth(0).click();
   const span_elaboracao = page.getByRole('cell', { name: 'Elaboração em andamento' });
     await span_elaboracao.waitFor({ state: 'visible' });
   console.log('Elaboração em andamento...')
