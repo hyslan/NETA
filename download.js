@@ -47,7 +47,7 @@ function extractZip(zipFile, outputDir) {
     await page.getByText('Tarefas agendadas').click();
     await page.getByRole('button', { name: 'OK' }).click();
     await page.getByTitle('Executados').click();
-    const spanLocator = await page.getByText(nome_arquivo);
+    const spanLocator = page.getByText(nome_arquivo).nth(0);
     const id = await spanLocator.getAttribute('id');
     let id_download = id.replaceAll('_', '$')
         .replace('gv$', 'gv_')

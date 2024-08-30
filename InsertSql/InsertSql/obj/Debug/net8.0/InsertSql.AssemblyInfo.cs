@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InsertSql")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3190ef5cdbc04b25b1847fe6fb03da51d21d5cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43d7fd7b8582494148e0bedddba7b73063b9f6df")]
 [assembly: System.Reflection.AssemblyProductAttribute("InsertSql")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InsertSql")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
